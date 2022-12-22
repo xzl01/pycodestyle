@@ -1,0 +1,7 @@
+Test-Command: cd "$AUTOPKGTEST_TMP" ; python3 -c "import pycodestyle; print(pycodestyle.__version__)"
+
+Tests: python3
+Depends: python3-pycodestyle
+
+Tests: cli
+Depends: pycodestyle

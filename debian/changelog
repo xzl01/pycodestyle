@@ -1,0 +1,100 @@
+pycodestyle (2.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * d/copyright: Update for new upstream release.
+  * Bump debhelper compat level to 13.
+  * Set Rules-Requires-Root: no.
+  * Add d/pybuild.testfiles.
+  * Bump standards version to 4.5.0.
+  * Remove broken mention of testsuite from setup.py.
+
+ -- Ondřej Nový <onovy@debian.org>  Fri, 12 Jun 2020 11:52:07 +0200
+
+pycodestyle (2.5.0-3) unstable; urgency=medium
+
+  * Drop python2 support; Closes: #937408
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 16 Mar 2020 00:58:30 -0400
+
+pycodestyle (2.5.0-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.4.1.
+  * Call python2 in the autopkg tests.
+
+ -- Ondřej Nový <onovy@debian.org>  Fri, 17 Jan 2020 11:17:44 +0100
+
+pycodestyle (2.5.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump debhelper compat level to 12 and use debhelper-compat
+  * Bump standards version to 4.4.0 (no changes)
+  * Mark pycodestyle binary package as Multi-Arch: foreign (Closes: #930602)
+  * debian/patches/Keep-compatibility-with-stdlib-tokenize-py-changes.patch:
+    Drop, applied upstream
+
+ -- Ondřej Nový <onovy@debian.org>  Tue, 16 Jul 2019 15:48:09 +0200
+
+pycodestyle (2.4.0-2) unstable; urgency=medium
+
+  * Breaks older python{3,}-flake8
+
+ -- Ondřej Nový <onovy@debian.org>  Fri, 28 Sep 2018 11:22:22 +0200
+
+pycodestyle (2.4.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards version is 4.2.1 now (no changes needed)
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/tests: Use AUTOPKGTEST_TMP instead of ADTTMP
+  * Convert git repository from git-dpm to gbp layout
+  * d/p/Keep-compability-with-stdlib-tokenize-py-changes.patch:
+    Fix Python 3.7 (Closes: #904876)
+  * Bump debhelper compat level to 11
+  * Add upstream metadata
+
+ -- Ondřej Nový <onovy@debian.org>  Thu, 27 Sep 2018 10:05:52 +0200
+
+pycodestyle (2.3.1-2) unstable; urgency=medium
+
+  * Uploading to unstable
+
+ -- Ondřej Nový <onovy@debian.org>  Tue, 20 Jun 2017 10:18:17 +0200
+
+pycodestyle (2.3.1-1) experimental; urgency=medium
+
+  * New upstream release
+  * d/copyright: Bump copyright years
+
+ -- Ondřej Nový <onovy@debian.org>  Tue, 21 Feb 2017 09:37:38 +0100
+
+pycodestyle (2.2.0-2) unstable; urgency=medium
+
+  * Require same version of python3-pycodestyle and pycodestyle
+    (Closes: #844990)
+
+ -- Ondřej Nový <onovy@debian.org>  Sat, 19 Nov 2016 11:20:57 +0100
+
+pycodestyle (2.2.0-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #844421)
+
+ -- Ondřej Nový <onovy@debian.org>  Thu, 17 Nov 2016 14:08:59 +0100
+
+pycodestyle (2.1.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bumped debhelper version to 10
+
+ -- Ondřej Nový <onovy@debian.org>  Tue, 08 Nov 2016 12:27:52 +0100
+
+pycodestyle (2.0.0-2) unstable; urgency=medium
+
+  * Added manpage (Closes: #841174)
+
+ -- Ondřej Nový <onovy@debian.org>  Thu, 03 Nov 2016 22:09:56 +0100
+
+pycodestyle (2.0.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #833683)
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 08 Aug 2016 00:35:47 +0200
