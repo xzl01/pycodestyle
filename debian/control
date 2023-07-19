@@ -1,17 +1,21 @@
 Source: pycodestyle
 Section: python
 Priority: optional
-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
 Uploaders: Ondřej Nový <onovy@debian.org>
 Build-Depends: debhelper-compat (= 13),
-               dh-python,
+               dh-sequence-python3,
                python3-all,
                python3-setuptools,
-Standards-Version: 4.5.0
-Homepage: https://pypi.python.org/pypi/pycodestyle
-Vcs-Git: https://salsa.debian.org/python-team/modules/pycodestyle.git
-Vcs-Browser: https://salsa.debian.org/python-team/modules/pycodestyle
+Standards-Version: 4.6.2
+Homepage: https://github.com/PyCQA/pycodestyle
+Vcs-Git: https://salsa.debian.org/python-team/packages/pycodestyle.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/pycodestyle
 Rules-Requires-Root: no
+Description: Python style guide checker (formerly called pep8)
+ Features a plugin architecture allowing for adding new checks is easily.
+ Parseable output listing line numbers of the error location. Consists of
+ just one Python file, and requires only stdlib.
 
 Package: pycodestyle
 Architecture: all
@@ -20,19 +24,15 @@ Depends: python3-pkg-resources,
          python3-pycodestyle (=${binary:Version}),
          ${misc:Depends},
          ${python3:Depends},
-Description: Python style guide checker (formerly called pep8)
- Features a plugin architecture allowing for adding new checks is easily.
- Parseable output listing line numbers of the error location. Consists of
- just one Python file, and requires only stdlib.
+Description: ${source:Synopsis}
+ ${source:Extended-Description}
 
 Package: python3-pycodestyle
 Architecture: all
 Depends: ${misc:Depends},
          ${python3:Depends},
-Breaks: python3-flake8 (<< 3.5.0-2~)
-Description: Python style guide checker (formerly called pep8) - Python 3.x
- Features a plugin architecture allowing for adding new checks is easily.
- Parseable output listing line numbers of the error location. Consists of
- just one Python file, and requires only stdlib.
+Breaks: python3-flake8 (<< 4.0.1-1~)
+Description: ${source:Synopsis} - Python 3.x
+ ${source:Extended-Description}
  .
  This package contains the Python 3.x module.

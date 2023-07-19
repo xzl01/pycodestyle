@@ -3,10 +3,8 @@
 export PYBUILD_NAME = pycodestyle
 
 %:
-	dh $@ --with python3 --buildsystem=pybuild
+	dh $@ --buildsystem=pybuild
 
-override_dh_auto_install:
-	dh_auto_install
-
+execute_after_dh_auto_install:
 	mkdir -p debian/pycodestyle/usr/bin
 	mv debian/python3-pycodestyle/usr/bin/* debian/pycodestyle/usr/bin

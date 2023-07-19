@@ -1,3 +1,51 @@
+pycodestyle (2.10.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 2.10.0 (Closes: #1026300)
+  * Use dh-sequence-python3
+  * Use execute_after in d/rules
+  * Move package description to source package
+  * Bump policy version (no changes)
+
+ -- Jochen Sprickerhof <jspricke@debian.org>  Thu, 29 Dec 2022 09:52:17 +0100
+
+pycodestyle (2.9.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Set Standards-Version to 4.6.1.
+
+ -- Emanuele Rocca <ema@debian.org>  Thu, 01 Sep 2022 07:55:40 +0200
+
+pycodestyle (2.8.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Update Breaks to newer python3-flake8 (Closes: #1006220)
+
+ -- Scott Talbert <swt@techie.net>  Mon, 21 Feb 2022 10:10:01 -0500
+
+pycodestyle (2.8.0-1) unstable; urgency=medium
+
+  * Team upload.
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Remove obsolete field Name from debian/upstream/metadata (already present in
+    machine-readable debian/copyright).
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ Scott Talbert ]
+  * Update to new upstream release 2.8.0
+  * Update homepage
+  * Update d/watch version to 4
+  * Update Standards-Version to 4.6.0 (no changes needed)
+
+ -- Scott Talbert <swt@techie.net>  Thu, 17 Feb 2022 20:45:40 -0500
+
 pycodestyle (2.6.0-1) unstable; urgency=medium
 
   * New upstream release.
