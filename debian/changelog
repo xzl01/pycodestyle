@@ -1,3 +1,13 @@
+pycodestyle (2.11.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    - Add support for Python 3.12. (Closes: #1042121)
+  * Execute upstream tests during package build and autopkgtest
+  * Use GitHub tags as source tarball
+
+ -- Benjamin Drung <bdrung@debian.org>  Thu, 07 Dec 2023 13:35:51 +0100
+
 pycodestyle (2.10.0-1) unstable; urgency=medium
 
   * Team upload.
