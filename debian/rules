@@ -1,6 +1,7 @@
 #! /usr/bin/make -f
 
 export PYBUILD_NAME = pycodestyle
+export PYBUILD_TEST_ARGS=-s $(CURDIR)
 
 %:
 	dh $@ --buildsystem=pybuild
